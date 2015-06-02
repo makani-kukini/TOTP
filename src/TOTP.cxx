@@ -84,7 +84,7 @@ std::string TOTP::generateTOTP(std::string &key, std::string &time, std::string 
     unsigned int codeDigits = atoi(returnDigits.c_str());
     std::string result;
 
-	while (time.length() < 16)
+    while (time.length() < 16)
     {
         time = "0" + time;
     }
