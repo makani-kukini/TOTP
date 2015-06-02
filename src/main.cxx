@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 
     for (auto curr : test_time)
     {
-		std::time_t rawtime(curr);
+        std::time_t rawtime(curr);
 
         long T = (curr - T0) / X;
         steps = toHexString(T);
@@ -60,5 +60,5 @@ std::string toHexString(long T)
     hex = oss.str();
     std::transform(hex.begin(), hex.end(), hex.begin(), ::toupper);
 
-	return hex;
+    return hex;
 }
