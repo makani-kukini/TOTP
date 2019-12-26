@@ -6,6 +6,10 @@
 #include <string>
 #include <vector>
 
+#define CC_SHA1_DIGEST_LENGTH   20
+#define CC_SHA256_DIGEST_LENGTH 32
+#define CC_SHA512_DIGEST_LENGTH 64
+
 class TOTP
 {
 public:

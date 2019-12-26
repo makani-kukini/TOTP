@@ -1,10 +1,10 @@
 UNAME:=$(shell uname)
 ifeq ($(UNAME), Linux)
 CC=g++
-LIBS=-lcrypt
+LIBS=-lcrypto -lssl
 endif
 ifeq ($(UNAME), Darwin)
-CC=g++
+CC=g++-5.2.0
 LIBS=
 endif
 
